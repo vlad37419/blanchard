@@ -1,0 +1,215 @@
+/* Шрифты */
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans SemiBlold'), local('OpenSans-SemiBlold'),
+        url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBlold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans italic'), local('OpenSans-italic'),
+        url('../fonts/OpenSans-italic.woff2') format('woff2'),
+        url('../fonts/OpenSans-italic.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* Обнулние стилей */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* glob */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 160px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header__top {
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__bottom {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.header__logo {
+    margin-right: 180px;
+}
+
+.header__menu {
+    margin-right: auto;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 62px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.header__enter {
+    display: flex;
+    align-items: center;
+}
+
+.header__enter-icon {
+    margin-right: 7px;
+}
+
+.header__enter-text {
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.menu-bottom__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bottom__item {
+    padding-right: 15px;
+    background-image: url('../img/header/arrow.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-right: 96px;
+    font-size: 18px;
+    line-height: 25px;
+}
