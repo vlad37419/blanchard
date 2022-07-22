@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Blanchard</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__top container">
@@ -38,7 +42,12 @@
                 </ul>
             </nav>
             <a href="#" class="header__enter">
-                <img aria-label="presentation" src="assets/img/header/enter.svg" class="header__enter-icon">
+                <svg class="header__enter-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                        fill="white" />
+                </svg>
                 <span class="header__enter-text">Войти</span>
             </a>
         </div>
@@ -46,23 +55,232 @@
             <nav class="header__bottom-menu menu-bottom">
                 <ul class="menu-bottom__list">
                     <li class="menu-bottom__item">
-                        Реализм
+                        <button class="menu-bottom__item-open">
+                            <span class="menu-bottom__item-text">Реализм</span>
+                            <svg class="menu-bottom__item-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="#fff" />
+                            </svg>
+                        </button>
+                        <div class="menu-bottom__dropdown">
+                            <div class="menu-bottom__simplebar">
+                                <ul class="menu-bottom__sub-list">
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_tintoretto">
+                                            <span class="menu-bottom__sub-link-text">Тинторетто</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_friedrich">
+                                            <span class="menu-bottom__sub-link-text">Фридрих</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_leonardo">
+                                            <span class="menu-bottom__sub-link-text">Леонардо</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_verrocchio">
+                                            <span class="menu-bottom__sub-link-text">Верроккьо</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_tintoretto">
+                                            <span class="menu-bottom__sub-link-text">Тинторетто</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_friedrich">
+                                            <span class="menu-bottom__sub-link-text">Фридрих</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_leonardo">
+                                            <span class="menu-bottom__sub-link-text">Леонардо</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_verrocchio">
+                                            <span class="menu-bottom__sub-link-text">Верроккьо</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="menu-bottom__item">
-                        Импрессионизм
+                        <button class="menu-bottom__item-open">
+                            <span class="menu-bottom__item-text">Импрессионизм</span>
+                            <svg class="menu-bottom__item-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="#fff" />
+                            </svg>
+                        </button>
+                        <div class="menu-bottom__dropdown">
+                            <div class="menu-bottom__simplebar">
+                                <ul class="menu-bottom__sub-list">
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_monet">
+                                            <span class="menu-bottom__sub-link-text">Моне</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_sisley">
+                                            <span class="menu-bottom__sub-link-text">Сислей</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_mane">
+                                            <span class="menu-bottom__sub-link-text">Мане</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_renoir">
+                                            <span class="menu-bottom__sub-link-text">Ренуар</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="menu-bottom__item">
-                        Постимпрессионизм
+                        <button class="menu-bottom__item-open">
+                            <span class="menu-bottom__item-text">Постимпрессионизм</span>
+                            <svg class="menu-bottom__item-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="#fff" />
+                            </svg>
+                        </button>
+                        <div class="menu-bottom__dropdown">
+                            <div class="menu-bottom__simplebar">
+                                <ul class="menu-bottom__sub-list">
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_van-gogh">
+                                            <span class="menu-bottom__sub-link-text">Ван Гог</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_cezanne">
+                                            <span class="menu-bottom__sub-link-text">Сезанн</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_gauguin">
+                                            <span class="menu-bottom__sub-link-text">Гоген</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_sulfur">
+                                            <span class="menu-bottom__sub-link-text">Сёра</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="menu-bottom__item">
-                        Авангард
+                        <button class="menu-bottom__item-open">
+                            <span class="menu-bottom__item-text">Авангард</span>
+                            <svg class="menu-bottom__item-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="#fff" />
+                            </svg>
+                        </button>
+                        <div class="menu-bottom__dropdown">
+                            <div class="menu-bottom__simplebar">
+                                <ul class="menu-bottom__sub-list">
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_kandinsky">
+                                            <span class="menu-bottom__sub-link-text">Кандинский</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_marinetti">
+                                            <span class="menu-bottom__sub-link-text">Маринетти</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_malevich">
+                                            <span class="menu-bottom__sub-link-text">Малевич</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_picasso">
+                                            <span class="menu-bottom__sub-link-text">Пикассо</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="menu-bottom__item">
-                        Футуризм
+                        <button class="menu-bottom__item-open">
+                            <span class="menu-bottom__item-text">Футуризм</span>
+                            <svg class="menu-bottom__item-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="#fff" />
+                            </svg>
+                        </button>
+                        <div class="menu-bottom__dropdown">
+                            <div class="menu-bottom__simplebar">
+                                <ul class="menu-bottom__sub-list">
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_carra">
+                                            <span class="menu-bottom__sub-link-text">Карра</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_pratella">
+                                            <span class="menu-bottom__sub-link-text">Прателла</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_severini">
+                                            <span class="menu-bottom__sub-link-text">Северини</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-bottom__sub-item">
+                                        <a href="#" class="menu-bottom__sub-link menu-bottom__sub-link_balla">
+                                            <span class="menu-bottom__sub-link-text">Балла</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
+            <div class="header__search search">
+                <img aria-div="presentation" src="assets/img/header/search.svg" class="search__icon">
+                <input placeholder="Поиск по сайту" type="text" class="search__input">
+            </div>
         </div>
     </header>
+    <section class="promo">
+        <div class="promo__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="promo__slide swiper-slide"></div>
+                <div class="promo__slide swiper-slide"></div>
+                <div class="promo__slide swiper-slide"></div>
+            </div>
+        </div>
+        <div class="promo__container container">
+            <h1 class="promo__title">
+                Прикоснитесь к прекрасному
+            </h1>
+            <p class="promo__descr">
+                Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки
+                для новых предложений
+            </p>
+            <button class="promo__btn">
+                Подписаться на рассылку
+            </button>
+        </div>
+    </section>
+    <script src="assets/js/simplebar.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
