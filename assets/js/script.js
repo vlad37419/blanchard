@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const swiper = new Swiper('.promo__slider', {
+    const promoSlider = new Swiper('.promo__slider', {
         slidesPerView: 1,
         speed: 2000,
         autoplay: {
@@ -37,5 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         effect: "fade",
         touchRatio: false,
+    });
+
+    new Choices('.select', {
+        searchEnabled: false,
+    });
+
+    const gallerySlider = new Swiper('.gallery__slider', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        touchRatio: false,
+        navigation: {
+            nextEl: '.slider-gallery__button-next',
+            prevEl: '.slider-gallery__button-prev',
+        },
+        pagination: {
+            el: '.slider-gallery__pagination',
+            type: 'fraction',
+        },
     });
 });
