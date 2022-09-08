@@ -1,3 +1,7 @@
+function getHeight(el) {
+    return el.offsetHeight;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".menu-bottom__simplebar").forEach(dropdown => {
         new SimpleBar(dropdown, {
@@ -57,4 +61,32 @@ document.addEventListener("DOMContentLoaded", function () {
             type: 'fraction',
         },
     });
+
+    // Accordion
+    const accorOpenBtns = document.querySelectorAll('.accor-open');
+
+    for (let i = 0; i < accorOpenBtns.length; i += 1) {
+        let accorOpenBtn = accorOpenBtns[i];
+
+        accorOpenBtn.addEventListener('click', function () {
+            let accor = accorOpenBtn.closest('.accor');
+            let accorFull = accor.querySelector('.accor-full');
+            let accorFullContent = accor.querySelector('.accor-full-content');
+            let accorFullContentHeight = getHeight(accorFullContent);
+
+            console.log(accorFullContentHeight);
+
+            if (accor.classList.contains('active')) {
+                accor.classList.remove('active');
+                accorFull.style.height = '0px';
+            } else {
+                document.querySelectorAll('.accor').forEach(function(el) {
+                    el.classList.remove('active');
+                    el.querySelector('.accor-full').style.height = '0px';
+                });
+                accor.classList.add('active');
+                accorFull.style.height = accorFullContentHeight + 'px';
+            }
+        });
+    }
 });
