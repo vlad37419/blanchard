@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 accor.classList.remove('active');
                 accorFull.style.height = '0px';
             } else {
-                document.querySelectorAll('.accor').forEach(function(el) {
+                document.querySelectorAll('.accor').forEach(function (el) {
                     el.classList.remove('active');
                     el.querySelector('.accor-full').style.height = '0px';
                 });
@@ -89,4 +89,47 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    accorOpenBtns[0].click();
+
+    // Tabs
+    const tabsBtns = document.querySelectorAll('.tabs-btn');
+    const tabsContent = document.querySelectorAll('.tabs-content');
+
+    tabsBtns.forEach(function (tabsBtn) {
+        tabsBtn.addEventListener('click', function (e) {
+            const path = e.currentTarget.dataset.path;
+            tabsBtns.forEach(function (btn) {
+                btn.classList.remove('active')
+            });
+            e.currentTarget.classList.add('active');
+            tabsContent.forEach(function (tabsBtn) {
+                tabsBtn.classList.remove('active')
+            });
+            document.querySelector(`[data-target="${path}"]`).classList.add('active');
+        });
+    });
+
+
+    // Scroll to block
+    document.querySelectorAll('a[href^="#"').forEach(link => {
+
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            let href = this.getAttribute('href').substring(1);
+    
+            const scrollTarget = document.getElementById(href);
+    
+            // const topOffset = document.querySelector('.scrollto').offsetHeight;
+            const topOffset = 170;
+            const elementPosition = scrollTarget.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - topOffset;
+    
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
 });

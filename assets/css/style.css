@@ -1082,7 +1082,8 @@ body {
 
 .painter__avatar-img {
     width: 100%;
-    max-height: 470px;
+    height: 470px;
+    object-fit: cover;
 }
 
 .painter__name {
@@ -1090,6 +1091,10 @@ body {
     font-size: 24px;
     line-height: 33px;
     color: #333;
+    margin-bottom: 15px;
+}
+
+.painter_disabled .painter__descr {
     margin-bottom: 15px;
 }
 
@@ -1110,15 +1115,61 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-top: 1px solid #CACACA;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid #CACACA;
+    margin-top: -1px;
+    transition: border-color .2s ease;
+    position: relative;
 }
 
-.period-text {
+.period:first-child {
+    border-color: #CACACA;
+}
+
+.period:hover {
+    border-color: #9D5CD0;
+    z-index: 10;
+}
+
+.period:active {
+    border-color: #7943A4;
+    z-index: 10;
+}
+
+.periods__item.active .period {
+    border-color: #7943A4;
+    z-index: 10;
+}
+
+.period__text {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: #333;
+    transition: color .2s ease, backgrond-color .2s ease;
+}
+
+.periods__item.active .period__text {
+    color: #7943A4;
+}
+
+.period:focus .period__text {
+    background-color: #9D5CD0;
+    color: #fff;
+}
+
+.period:hover .period__text {
+    background-color: transparent;
+    color: #9D5CD0;
+}
+
+.periods__item.active .period:hover .period__text {
+    color: #7943A4;
+}
+
+.period:active .period__text {
+    color: #7943A4;
+    background-color: transparent;
 }
 
 .period__decor {
@@ -1129,6 +1180,29 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ECECEC;
+    border: 2px solid #ECECEC;
+    transition: background-color .2s ease, border-color .2s ease;
+}
+
+.period:focus .period__decor {
+    background-color: #D1A9F0;
+}
+
+.period:hover .period__decor {
+    background-color: #D1A9F0;
+}
+
+.periods__item.active .period__decor {
+    background-color: #D1A9F0;
+    border-color: #9D5CD0;
+}
+
+.period__icon {
+    transition: transform .2s ease;
+}
+
+.periods__item.active .period__icon {
+    transform: rotate(180deg);
 }
 
 .painters__container {
@@ -1144,8 +1218,161 @@ body {
     margin-right: 0;
 }
 
-.painters__item {
+.disabled-block {
+    display: flex;
+    align-items: center;
+}
+
+.disabled-block__decor {
+    width: 275px;
+    height: 189px;
+    border: 2px solid #999;
+    padding: 12px;
+    margin-right: 24px;
+}
+
+.disabled-block__decor-square {
+    background-color: #999;
+    height: 100%;
+}
+
+.disabled-block__wrapper {
+    max-width: 275px;
+}
+
+.disabled-block-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+}
+
+.disabled-block__title {
+    margin-bottom: 5px;
+}
+
+.disabled-block-descr {
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.disabled-block__descr {
+    margin-bottom: 5px;
+}
+
+.disabled-block-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9D5CD0;
+}
+
+.tabs-content {
+    display: none;
+    
+}
+
+.tabs-content.active {
+    display: block;
+    animation: fadeIn .2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.painters__item-btn {
+    transition: background-color .2s ease, color .2s ease;
     font-size: 16px;
     line-height: 32px;
     color: #333;
+    position: relative;
+}
+
+.painters__item-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #9D5CD0;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.painters__item-btn:hover::before {
+    opacity: 1;
+}
+
+.painters__item-btn:focus {
+    background-color: #9D5CD0;
+    color: #fff;
+}
+
+.painters__item-btn:hover {
+    color: #9D5CD0;
+    background-color: #fff;
+}
+
+.painters__item-btn.active {
+    pointer-events: none;
+    background-color: transparent;
+    color: #7943A4;
+}
+
+.painters__item-btn:active {
+    background-color: transparent;
+    color: #7943A4;
+}
+
+.painters__item-btn:active::before {
+    opacity: 0;
+}
+
+.gallery-link {
+    transition: background-color .2s ease, color .2s ease;
+    position: relative;
+}
+
+.gallery-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #9D5CD0;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.gallery-link:hover::after {
+    opacity: 1;
+}
+
+.gallery-link:focus {
+    background-color: #9D5CD0;
+    color: #fff;
+}
+
+.gallery-link:hover {
+    background-color: transparent;
+    color: #9D5CD0;
+}
+
+.gallery-link:active {
+    background-color: transparent;
+    color: #7943A4;
+}
+
+.gallery-link:active::after {
+    background-color: #7943A4;
 }
