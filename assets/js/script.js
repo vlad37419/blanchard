@@ -114,22 +114,34 @@ document.addEventListener("DOMContentLoaded", function () {
     // Scroll to block
     document.querySelectorAll('a[href^="#"').forEach(link => {
 
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-    
+
             let href = this.getAttribute('href').substring(1);
-    
+
             const scrollTarget = document.getElementById(href);
-    
+
             // const topOffset = document.querySelector('.scrollto').offsetHeight;
             const topOffset = 170;
             const elementPosition = scrollTarget.getBoundingClientRect().top;
             const offsetPosition = elementPosition - topOffset;
-    
+
             window.scrollBy({
                 top: offsetPosition,
                 behavior: 'smooth'
             });
         });
+    });
+
+    // events slider
+    const eventsSlider = new Swiper('.events__slider', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        touchRatio: false,
+        spaceBetween: 50,
+        navigation: {
+            nextEl: '.events__slider-button_next',
+            prevEl: '.events__slider-button_prev',
+        },
     });
 });
