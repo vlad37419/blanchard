@@ -178,4 +178,44 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // inputmask for tel
+    let telSelector = document.querySelector("input[type='tel']");
+    let im = new Inputmask("+7(999) 999-99-99");
+
+    im.mask(telSelector);
+
+    // validator
+    const validation = new JustValidate('.form');
+
+    validation
+        .addField('.name', [
+            {
+                rule: 'required',
+                errorMessage: 'Вы не ввели имя',
+            },
+            {
+                rule: 'minLength',
+                value: 2,
+                errorMessage: 'Минимум 2 символа',
+            },
+            {
+                rule: 'customRegexp',
+                value: /^[а-яА-Яa-zA-Z]+$/,
+                errorMessage: 'Недопустимый формат',
+            },
+        ])
+        .addField('.phone', [
+            {
+                rule: 'required',
+                errorMessage: 'Вы не ввели телефон',
+            },
+            {
+                validator: () => {
+                    const phone = telSelector.inputmask.unmaskedvalue();
+                    return Number(phone) && phone.length === 10;
+                },
+                errorMessage: 'Введите номер телефона полностью',
+            },
+        ]);
 });
