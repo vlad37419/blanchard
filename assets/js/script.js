@@ -74,8 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
             let accorFullContent = accor.querySelector('.accor-full-content');
             let accorFullContentHeight = getHeight(accorFullContent);
 
-            console.log(accorFullContentHeight);
-
             if (accor.classList.contains('active')) {
                 accor.classList.remove('active');
                 accorFull.style.height = '0px';
@@ -144,4 +142,40 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: '.events__slider-button_prev',
         },
     });
+
+    // partners slider
+    const partnersSlider = new Swiper('.partners__slider', {
+        slidesPerView: 3,
+        touchRatio: false,
+        spaceBetween: 50,
+        navigation: {
+            nextEl: '.partners__slider-button_next',
+            prevEl: '.partners__slider-button_prev',
+        },
+    });
+
+    // tooltips
+    let tooltips = document.querySelectorAll('.tooltip');
+
+    for (let i = 0; i < tooltips.length; i += 1) {
+        let tooltip = tooltips[i];
+
+        tooltip.addEventListener('click', function () {
+            if (tooltip.classList.contains('active')) {
+                tooltip.classList.remove('active');
+            } else {
+                for (let j = 0; j < tooltips.length; j += 1) {
+                    tooltips[j].classList.remove('active');
+                }
+                tooltip.classList.add('active');
+            }
+        });
+
+        window.addEventListener('click', function (e) {
+            const target = e.target;
+            if (!target.closest('.tooltip')) {
+                tooltip.classList.remove('active');
+            }
+        });
+    }
 });
