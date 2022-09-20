@@ -18,28 +18,28 @@
     <header class="header">
         <div class="header__top">
             <div class="header__top-container container">
-                <a href="/" class="header__logo">
-                    <img src="assets/img/header/logo.svg" alt="Логотип компании Blanchard" class="header__logo-image">
+                <a href="/" class="header__logo logo">
+                    <img src="assets/img/header/logo.svg" alt="Логотип компании Blanchard" class="logo__image">
                 </a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">О нас</a>
+                            <a href="#about" class="menu__link">О нас</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Галерея</a>
+                            <a href="#gallery" class="menu__link">Галерея</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Каталог</a>
+                            <a href="#catalog" class="menu__link">Каталог</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">События</a>
+                            <a href="#events" class="menu__link">События</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Проекты</a>
+                            <a href="#projects" class="menu__link">Проекты</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Контакты</a>
+                            <a href="#contacts" class="menu__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -262,1208 +262,1288 @@
             </div>
         </div>
     </header>
-    <section class="promo">
-        <h1 class="visually-hidden">
-            Blanchard - художественная галерея
-        </h1>
-        <div class="promo__slider swiper">
-            <div class="swiper-wrapper">
-                <div class="promo__slide swiper-slide"></div>
-                <div class="promo__slide swiper-slide"></div>
-                <div class="promo__slide swiper-slide"></div>
-            </div>
-        </div>
-        <div class="promo__container container">
-            <h2 class="promo__title">
-                Прикоснитесь к прекрасному
-            </h2>
-            <p class="promo__descr">
-                Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки
-                для новых предложений
-            </p>
-            <button class="promo__btn">
-                Подписаться на рассылку
-            </button>
-        </div>
-    </section>
-    <section class="about section-offset">
-        <div class="about__container container">
-            <h2 class="about__title section-title">
-                О нас
-            </h2>
-            <p class="about__descr section-descr">
-                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
-                каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов
-                и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
-                за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое
-                качество позиционных исследований создаёт необходимость включения в производственный план целого ряда
-                внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках
-                спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
-                определённых слоёв населения, а значит, должны быть разоблачены.
-            </p>
-        </div>
-    </section>
-    <section id="gallery" class="gallery section-offset">
-        <div class="gallery__container container">
-            <h2 class="gallery__title section-title">
-                Галерея
-            </h2>
-            <div class="gallery__content">
-                <div class="gallery__filters filters">
-                    <p class="filters__title">
-                        Фильтр:
-                    </p>
-                    <div class="filters__select">
-                        <select class="filters__select-item select">
-                            <option class="select__option" value="Живопись">Живопись</option>
-                            <option class="select__option" value="Рисунок">Рисунок</option>
-                            <option class="select__option" value="Скульптура">Скульптура</option>
-                        </select>
-                    </div>
-                    <div class="filters__checkbox-group checkbox-group">
-                        <label class="checkbox-group__checkbox checkbox">
-                            <input type="checkbox" name="century" class="checkbox__input visually-hidden">
-                            <span class="checkbox__check">
-                                <span class="checkbox__check-active"></span>
-                            </span>
-                            <span class="checkbox__text">
-                                XIX век
-                            </span>
-                        </label>
-                        <label class="checkbox-group__checkbox checkbox">
-                            <input type="checkbox" name="century" class="checkbox__input visually-hidden">
-                            <span class="checkbox__check">
-                                <span class="checkbox__check-active"></span>
-                            </span>
-                            <span class="checkbox__text">
-                                XX век
-                            </span>
-                        </label>
-                        <label class="checkbox-group__checkbox checkbox">
-                            <input type="checkbox" name="century" class="checkbox__input visually-hidden">
-                            <span class="checkbox__check">
-                                <span class="checkbox__check-active"></span>
-                            </span>
-                            <span class="checkbox__text">
-                                Современность
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="gallery__main">
-                    <div class="slider-gallery__navigation">
-                        <div class="slider-gallery__button slider-gallery__button-prev">
-                            <svg class="slider-gallery__button-arrow" width="7" height="12" viewBox="0 0 7 12"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
-                            </svg>
-                        </div>
-                        <div class="slider-gallery__pagination"></div>
-                        <div class="slider-gallery__button slider-gallery__button-next">
-                            <svg class="slider-gallery__button-arrow" width="7" height="12" viewBox="0 0 7 12"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="gallery__slider slider-gallery swiper">
-                        <div class="slider-gallery__wrapper swiper-wrapper">
-                            <div class="slider-gallery__slide swiper-slide">
-                                <img src="assets/img/gallery/slide-1.jpg" alt="" class="slider-gallery__slide-image">
-                            </div>
-                            <div class="slider-gallery__slide swiper-slide">
-                                <img src="assets/img/gallery/slide-2.jpg" alt="" class="slider-gallery__slide-image">
-                            </div>
-                            <div class="slider-gallery__slide swiper-slide">
-                                <img src="assets/img/gallery/slide-3.jpg" alt="" class="slider-gallery__slide-image">
-                            </div>
-                            <div class="slider-gallery__slide swiper-slide">
-                                <img src="assets/img/gallery/slide-4.jpg" alt="" class="slider-gallery__slide-image">
-                            </div>
-                            <div class="slider-gallery__slide swiper-slide">
-                                <img src="assets/img/gallery/slide-5.jpg" alt="" class="slider-gallery__slide-image">
-                            </div>
-                            <div class="slider-gallery__slide swiper-slide">
-                                <img src="assets/img/gallery/slide-6.jpg" alt="" class="slider-gallery__slide-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="catalog section-offset">
-        <div class="catalog__container container">
-            <h2 class="catalog__title section-title">
-                Каталог
-            </h2>
-            <p class="catalog__descr section-descr">
-                Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
-                политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего
-                лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
-                остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
-            </p>
-            <div class="catalog__wrapper">
-                <div class="catalog__content">
-                    <article class="catalog__painter painter tabs-content" data-target="1">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/benedito-di-bingo.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Бенедетто ди Биндо
-                        </h3>
-                        <p class="painter__birthday">
-                            ок 1380-85 — 9 сентября 1417
-                        </p>
-                        <p class="painter__descr section-descr">
-                            Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго
-                            ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов,
-                            включая работы в Сиенском соборе (работы в главном соборе республики второстепенным
-                            художникам не поручались). Обучение он прошёл у Таддео ди Бартоло, крупного сиенского
-                            мастера поздней готики, в боттеге которого Бенедетто трудился вместе с Грегорио ди Чекко.
-                            Наибольшее влияние на его творчество оказали работы Симоне Мартини, в частности в выборе
-                            колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни да
-                            Милано.
-                        </p>
-                    </article>
-                    <article class="catalog__painter painter tabs-content" data-target="2">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/bergonyone.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Бергоньоне, Амброджо
-                        </h3>
-                        <p class="painter__birthday">
-                            ок 1380-85 — 9 сентября 1417
-                        </p>
-                        <p class="painter__descr section-descr">
-                            Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа.
-                            Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486–1494 в монастырской
-                            обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и
-                            церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в
-                            Милане, в базилике Сан-Симпличано.
-                        </p>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="3">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="4">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="5">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="6">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="7">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="8">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="9">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="10">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="11">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter tabs-content active" data-target="12">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/domenico-ghirlandaio.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Доменико Гирландайо
-                        </h3>
-                        <p class="painter__birthday">
-                            2 июня 1448–11 января 1494
-                        </p>
-                        <p class="painter__descr section-descr">
-                            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                            которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
-                            Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов,
-                            в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских
-                            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
-                        </p>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="13">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="14">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="15">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="16">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="17">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="18">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="19">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="20">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="21">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="22">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="23">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                    <article class="catalog__painter painter painter_disabled tabs-content" data-target="24">
-                        <picture class="painter__avatar">
-                            <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
-                                class="painter__avatar-img">
-                        </picture>
-                        <h3 class="painter__name">
-                            Что мы о нём знаем?
-                        </h3>
-                        <p class="painter__descr section-descr">
-                            Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <a href="#gallery" class="painter__link disabled-block-link gallery-link">
-                            В галерею
-                        </a>
-                    </article>
-                </div>
-                <ul class="catalog__periods periods">
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 1400 по 1499 гг
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <ul class="painters__list">
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="1">
-                                            Бенедетто ди Биндо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="2">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="3">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="4">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="5">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="6">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="7">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="8">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="9">
-                                            Бьяджо д’Антонио Туччи
-                                        </button>
-                                    </li>
-                                </ul>
-                                <ul class="painters__list">
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="10">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="11">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn active" data-path="12">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="13">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="14">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="15">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="16">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="17">
-                                            Джованни ди Паоло
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="18">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                </ul>
-                                <ul class="painters__list">
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="19">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="20">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="21">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="22">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="23">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="painters__item">
-                                        <button class="painters__item-btn tabs-btn" data-path="24">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 1500 по 1599 гг
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <div class="painters__disabled-block disabled-block">
-                                    <div class="disabled-block__decor">
-                                        <div class="disabled-block__decor-square"></div>
-                                    </div>
-                                    <div class="disabled-block__wrapper">
-                                        <p class="disabled-block__title disabled-block-title">
-                                            Здесь пока пусто
-                                        </p>
-                                        <p class="disabled-block__descr disabled-block-descr">
-                                            А в галерее вы всегда можете найти что-то интересное для себя
-                                        </p>
-                                        <a href="#gallery"
-                                            class="disabled-block__link disabled-block-link gallery-link">
-                                            В галерею
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 1600 по 1699 гг
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <div class="painters__disabled-block disabled-block">
-                                    <div class="disabled-block__decor">
-                                        <div class="disabled-block__decor-square"></div>
-                                    </div>
-                                    <div class="disabled-block__wrapper">
-                                        <p class="disabled-block__title disabled-block-title">
-                                            Здесь пока пусто
-                                        </p>
-                                        <p class="disabled-block__descr disabled-block-descr">
-                                            А в галерее вы всегда можете найти что-то интересное для себя
-                                        </p>
-                                        <a href="#gallery"
-                                            class="disabled-block__link disabled-block-link gallery-link">
-                                            В галерею
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 1700 по 1799 гг
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <div class="painters__disabled-block disabled-block">
-                                    <div class="disabled-block__decor">
-                                        <div class="disabled-block__decor-square"></div>
-                                    </div>
-                                    <div class="disabled-block__wrapper">
-                                        <p class="disabled-block__title disabled-block-title">
-                                            Здесь пока пусто
-                                        </p>
-                                        <p class="disabled-block__descr disabled-block-descr">
-                                            А в галерее вы всегда можете найти что-то интересное для себя
-                                        </p>
-                                        <a href="#gallery"
-                                            class="disabled-block__link disabled-block-link gallery-link">
-                                            В галерею
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 1800 по 1899 гг
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <div class="painters__disabled-block disabled-block">
-                                    <div class="disabled-block__decor">
-                                        <div class="disabled-block__decor-square"></div>
-                                    </div>
-                                    <div class="disabled-block__wrapper">
-                                        <p class="disabled-block__title disabled-block-title">
-                                            Здесь пока пусто
-                                        </p>
-                                        <p class="disabled-block__descr disabled-block-descr">
-                                            А в галерее вы всегда можете найти что-то интересное для себя
-                                        </p>
-                                        <a href="#gallery"
-                                            class="disabled-block__link disabled-block-link gallery-link">
-                                            В галерею
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 1900 по 1999 гг
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <div class="painters__disabled-block disabled-block">
-                                    <div class="disabled-block__decor">
-                                        <div class="disabled-block__decor-square"></div>
-                                    </div>
-                                    <div class="disabled-block__wrapper">
-                                        <p class="disabled-block__title disabled-block-title">
-                                            Здесь пока пусто
-                                        </p>
-                                        <p class="disabled-block__descr disabled-block-descr">
-                                            А в галерее вы всегда можете найти что-то интересное для себя
-                                        </p>
-                                        <a href="#gallery"
-                                            class="disabled-block__link disabled-block-link gallery-link">
-                                            В галерею
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="periods__item accor">
-                        <button class="periods__period period accor-open">
-                            <span class="period__text">
-                                C 2000 г
-                            </span>
-                            <span class="period__decor accor-open-decor">
-                                <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="periods__painters painters accor-full">
-                            <div class="painters__container accor-full-content">
-                                <div class="painters__disabled-block disabled-block">
-                                    <div class="disabled-block__decor">
-                                        <div class="disabled-block__decor-square"></div>
-                                    </div>
-                                    <div class="disabled-block__wrapper">
-                                        <p class="disabled-block__title disabled-block-title">
-                                            Здесь пока пусто
-                                        </p>
-                                        <p class="disabled-block__descr disabled-block-descr">
-                                            А в галерее вы всегда можете найти что-то интересное для себя
-                                        </p>
-                                        <a href="#gallery"
-                                            class="disabled-block__link disabled-block-link gallery-link">
-                                            В галерею
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="events section-offset">
-        <div class="events__container container">
-            <h2 class="events__title section-title">
-                События
-            </h2>
-            <div class="events__wrapper">
-                <div class="events__slider swiper">
-                    <div class="events__slider-wrapper swiper-wrapper">
-                        <div class="events__slide event swiper-slide">
-                            <picture class="event__picture">
-                                <img src="assets/img/events/book-engraving.jpg" alt="Изображение события"
-                                    class="event__image">
-                            </picture>
-                            <div class="event__content">
-                                <p class="event__place">
-                                    <span>Музей им. Щусева</span>
-                                    <span>с 20 марта по 30 апреля</span>
-                                </p>
-                                <h3 class="event__title">
-                                    Книжная гравюра <br> в живом восприятии
-                                </h3>
-                                <p class="event__descr">
-                                    Один из ведущих флорентийских художников Кватроченто, основатель художественной
-                                    династии, которую продолжили его брат Давид и сын Ридольфо
-                                </p>
-                                <a href="" class="event__link">
-                                    <span class="event__link-text">Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="events__slide event swiper-slide">
-                            <picture class="event__picture">
-                                <img src="assets/img/events/open-discussion.jpg" alt="Изображение события"
-                                    class="event__image">
-                            </picture>
-                            <div class="event__content">
-                                <p class="event__place">
-                                    <span>ММОМА</span>
-                                    <span>24 марта 19:00</span>
-                                </p>
-                                <h3 class="event__title">
-                                    «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-                                </h3>
-                                <p class="event__descr">
-                                    Высокий уровень вовлечения представителей целевой аудитории является чётким
-                                    доказательством простого факта
-                                </p>
-                                <a href="" class="event__link">
-                                    <span class="event__link-text">Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="events__slide event swiper-slide">
-                            <picture class="event__picture">
-                                <img src="assets/img/events/exhibition.jpg" alt="Изображение события"
-                                    class="event__image">
-                            </picture>
-                            <div class="event__content">
-                                <p class="event__place">
-                                    <span>Еврейский музей</span>
-                                    <span>с 31 марта по 21 апреля</span>
-                                </p>
-                                <h3 class="event__title">
-                                    Выставка «Формация 2020»
-                                </h3>
-                                <p class="event__descr">
-                                    Идейные соображения высшего порядка, а также современная методология разработки
-                                    играет важную роль в формировании глубокомысленных рассуждений
-                                </p>
-                                <a href="" class="event__link">
-                                    <span class="event__link-text">Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="events__slide event swiper-slide">
-                            <picture class="event__picture">
-                                <img src="assets/img/events/metaphor.jpg" alt="Изображение события"
-                                    class="event__image">
-                            </picture>
-                            <div class="event__content">
-                                <p class="event__place">
-                                    <span>ММАМ</span>
-                                    <span>с 8 апреля по 20 мая</span>
-                                </p>
-                                <h3 class="event__title">
-                                    Джон Винзор. Фотографии из серии «Метафора»
-                                </h3>
-                                <p class="event__descr">
-                                    Один из ведущих флорентийских художников Кватроченто, основатель художественной
-                                    династии, которую продолжили его брат Давид и сын Ридольфо
-                                </p>
-                                <a href="" class="event__link">
-                                    <span class="event__link-text">Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="events__slide event swiper-slide">
-                            <picture class="event__picture">
-                                <img src="assets/img/events/biennale.jpg" alt="Изображение события"
-                                    class="event__image">
-                            </picture>
-                            <div class="event__content">
-                                <p class="event__place">
-                                    <span>Третьяковка на Крымском валу</span>
-                                    <span>с 30 марта по 30 апреля</span>
 
-                                </p>
-                                <h3 class="event__title">
-                                    XXIV Международная биеннале молодого искусства
-                                </h3>
-                                <p class="event__descr">
-                                    Внезапно, реплицированные с зарубежных источников, современные исследования
-                                </p>
-                                <a href="" class="event__link">
-                                    <span class="event__link-text">Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events__slider-button events__slider-button_prev">
-                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.33334 0.666663L9.66667 9L1.33334 17.3333" stroke="black" />
-                    </svg>
-                </div>
-                <div class="events__slider-button events__slider-button_next">
-                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.33334 0.666663L9.66667 9L1.33334 17.3333" stroke="black" />
-                    </svg>
+    <main class="main">
+        <section id="promo" class="promo">
+            <h1 class="visually-hidden">
+                Blanchard - художественная галерея
+            </h1>
+            <div class="promo__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="promo__slide swiper-slide"></div>
+                    <div class="promo__slide swiper-slide"></div>
+                    <div class="promo__slide swiper-slide"></div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="projects section-offset">
-        <div class="projects__container container">
-            <h2 class="projects__title section-title">
-                Проекты
-            </h2>
-            <p class="projects__descr section-descr">
-                Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
-                однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства
-                смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус
-                бесполезности. Прежде всего, постоянное информационно-пропагандистское
-                <button class="tooltip">
-                    <span class="tooltip__preview">
-                        <span class="tooltip__preview-wrapper">
-                            <svg class="tooltip__icon" width="2" height="10" viewBox="0 0 2 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z"
-                                    fill="black" />
-                            </svg>
-                        </span>
-                    </span>
-                    <span class="tooltip__detail">
-                        Пример современных тенденций — современная методология разработки
-                    </span>
-                </button>
-                обеспечение нашей деятельности
-                однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений,
-                что действия представителей оппозиции могут быть рассмотрены
-                <button class="tooltip">
-                    <span class="tooltip__preview">
-                        <span class="tooltip__preview-wrapper">
-                            <svg class="tooltip__icon" width="2" height="10" viewBox="0 0 2 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z"
-                                    fill="black" />
-                            </svg>
-                        </span>
-                    </span>
-                    <span class="tooltip__detail">
-                        Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции
-                    </span>
-                </button>
-                исключительно в разрезе маркетинговых
-                и финансовых
-                <button class="tooltip">
-                    <span class="tooltip__preview">
-                        <span class="tooltip__preview-wrapper">
-                            <svg class="tooltip__icon" width="2" height="10" viewBox="0 0 2 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z"
-                                    fill="black" />
-                            </svg>
-                        </span>
-                    </span>
-                    <span class="tooltip__detail">
-                        В стремлении повысить качество
-                    </span>
-                </button>
-                предпосылок. Банальные, но неопровержимые выводы, а также представители современных
-                социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
-                с не уникальными данными до степени совершённой неузнаваемости. Подробнее:
-                <a href="" class="projects__descr-link">
-                    <span class="projects__descr-link-text">
-                        blanchard-art.ru/projects
-                    </span>
-                </a>
-            </p>
-            <div class="projects__partners partners">
-                <p class="partners__title">
-                    Партнёры проектов:
+            <div class="promo__container container">
+                <h2 class="promo__title">
+                    Прикоснитесь к прекрасному
+                </h2>
+                <p class="promo__descr">
+                    Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки
+                    для новых предложений
                 </p>
-                <div class="partners__wrapper">
-                    <div class="partners__slider swiper">
-                        <div class="partners__slider-wrapper swiper-wrapper">
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/freelads.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
+                <a href="#contacts" class="promo__btn">
+                    Подписаться на рассылку
+                </a>
+            </div>
+        </section>
+        <section id="about" class="about section-offset">
+            <div class="about__container container">
+                <h2 class="about__title section-title">
+                    О нас
+                </h2>
+                <p class="about__descr section-descr">
+                    Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
+                    каждого участника как способного принимать собственные решения касаемо распределения внутренних
+                    резервов
+                    и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+                    за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
+                    что высокое
+                    качество позиционных исследований создаёт необходимость включения в производственный план целого
+                    ряда
+                    внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках
+                    спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+                    определённых слоёв населения, а значит, должны быть разоблачены.
+                </p>
+            </div>
+        </section>
+        <section id="gallery" class="gallery section-offset">
+            <div class="gallery__container container">
+                <h2 class="gallery__title section-title">
+                    Галерея
+                </h2>
+                <div class="gallery__content">
+                    <div class="gallery__filters filters">
+                        <p class="filters__title">
+                            Фильтр:
+                        </p>
+                        <div class="filters__select">
+                            <select class="filters__select-item select">
+                                <option class="select__option" value="Живопись">Живопись</option>
+                                <option class="select__option" value="Рисунок">Рисунок</option>
+                                <option class="select__option" value="Скульптура">Скульптура</option>
+                            </select>
+                        </div>
+                        <div class="filters__checkbox-group checkbox-group">
+                            <label class="checkbox-group__checkbox checkbox">
+                                <input type="checkbox" name="century" class="checkbox__input visually-hidden">
+                                <span class="checkbox__check">
+                                    <span class="checkbox__check-active"></span>
+                                </span>
+                                <span class="checkbox__text">
+                                    XIX век
+                                </span>
+                            </label>
+                            <label class="checkbox-group__checkbox checkbox">
+                                <input type="checkbox" name="century" class="checkbox__input visually-hidden">
+                                <span class="checkbox__check">
+                                    <span class="checkbox__check-active"></span>
+                                </span>
+                                <span class="checkbox__text">
+                                    XX век
+                                </span>
+                            </label>
+                            <label class="checkbox-group__checkbox checkbox">
+                                <input type="checkbox" name="century" class="checkbox__input visually-hidden">
+                                <span class="checkbox__check">
+                                    <span class="checkbox__check-active"></span>
+                                </span>
+                                <span class="checkbox__text">
+                                    Современность
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="gallery__main">
+                        <div class="slider-gallery__navigation">
+                            <div class="slider-gallery__button slider-gallery__button-prev">
+                                <svg class="slider-gallery__button-arrow" width="7" height="12" viewBox="0 0 7 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+                                </svg>
                             </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/contemporary.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
+                            <div class="slider-gallery__pagination"></div>
+                            <div class="slider-gallery__button slider-gallery__button-next">
+                                <svg class="slider-gallery__button-arrow" width="7" height="12" viewBox="0 0 7 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
+                                </svg>
                             </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/workhouse.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
-                            </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/1849.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
-                            </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/hiscox.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
-                            </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/camden.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
-                            </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/stanen.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
-                            </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/watts.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
-                            </div>
-                            <div class="partners__slide partner swiper-slide">
-                                <a href="#" class="partner__link">
-                                    <img src="assets/img/partners/ecole.png" alt="Логотип партнера"
-                                        class="partner__logo">
-                                </a>
+                        </div>
+                        <div class="gallery__slider slider-gallery swiper">
+                            <div class="slider-gallery__wrapper swiper-wrapper">
+                                <div class="slider-gallery__slide swiper-slide">
+                                    <img src="assets/img/gallery/slide-1.jpg" alt=""
+                                        class="slider-gallery__slide-image">
+                                </div>
+                                <div class="slider-gallery__slide swiper-slide">
+                                    <img src="assets/img/gallery/slide-2.jpg" alt=""
+                                        class="slider-gallery__slide-image">
+                                </div>
+                                <div class="slider-gallery__slide swiper-slide">
+                                    <img src="assets/img/gallery/slide-3.jpg" alt=""
+                                        class="slider-gallery__slide-image">
+                                </div>
+                                <div class="slider-gallery__slide swiper-slide">
+                                    <img src="assets/img/gallery/slide-4.jpg" alt=""
+                                        class="slider-gallery__slide-image">
+                                </div>
+                                <div class="slider-gallery__slide swiper-slide">
+                                    <img src="assets/img/gallery/slide-5.jpg" alt=""
+                                        class="slider-gallery__slide-image">
+                                </div>
+                                <div class="slider-gallery__slide swiper-slide">
+                                    <img src="assets/img/gallery/slide-6.jpg" alt=""
+                                        class="slider-gallery__slide-image">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="partners__slider-button partners__slider-button_prev">
-                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 11L0.999995 6L6 0.999998" stroke="black" />
-                        </svg>
-                    </div>
-                    <div class="partners__slider-button partners__slider-button_next">
-                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 11L6.00001 6L1 0.999997" stroke="black" />
-                        </svg>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="contacts">
-        <form action="#" method="post" class="contacts__form form">
-            <div class="form__container container">
-                <div class="form__address">
-                    <h3 class="form__address-title form__title">
-                        Шоурум №4
-                    </h3>
-                    <p class="form__address-descr">
-                        Леонтьевский переулок, дом 5/1
-                    </p>
-                </div>
-                <div class="form__fields">
-                    <label class="form__label">
-                        <input type="text" name="name" placeholder="Имя*" class="form__input name">
-                    </label>
-                    <label class="form__label">
-                        <input type="tel" name="tel" placeholder="Телефон*" class="form__input phone">
-                    </label>
-                    <button type="submit" class="form__btn">
-                        Заказать обратный звонок
-                    </button>
-                </div>
-                <div class="form__connection connection">
-                    <h3 class="connection__title form__title">
-                        Связаться в один клик
-                    </h3>
-                    <ul class="connection__socials">
-                        <li class="connection__socials-item">
-                            <a href="#" class="connection__socials-link connection__socials-link_whatsapp">
-                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.875 13.751C16.625 13.626 15.3125 12.876 15.0625 12.8135C14.8125 12.6885 14.625 12.6885 14.4375 12.9385C14.25 13.1885 13.6875 13.8135 13.5625 13.9385C13.375 14.126 13.25 14.126 13 14.001C12.75 13.876 11.875 13.5635 10.875 12.5635C10.125 11.8135 9.5625 10.9385 9.4375 10.626C9.3125 10.376 9.4375 10.1885 9.5625 10.0635C9.6875 9.93848 9.8125 9.75098 10 9.62598C10.1875 9.50098 10.1875 9.37598 10.3125 9.18848C10.4375 9.00098 10.375 8.87598 10.3125 8.68848C10.25 8.50098 9.75 7.18848 9.5625 6.62598C9.375 6.06348 9.125 6.18848 9 6.12598C8.8125 6.12598 8.6875 6.06348 8.5 6.06348C8.25 6.06348 7.9375 6.18848 7.75 6.37598C7.5 6.62598 6.75 7.25098 6.75 8.56348C6.75 9.87598 7.625 11.251 7.75 11.376C7.875 11.5635 9.5 14.4385 12.1875 15.626C14.875 16.8135 14.875 16.4385 15.375 16.4385C15.875 16.4385 17 15.8135 17.25 15.251C17.5 14.626 17.5 14.0635 17.4375 14.001C17.3125 14.001 17.125 13.9385 16.875 13.751ZM11.875 20.1885C10.125 20.1885 8.5 19.6885 7.0625 18.751L3.6875 19.8135L4.8125 16.5635C3.75 15.0635 3.125 13.251 3.125 11.376C3.125 6.50098 7.0625 2.56348 11.9375 2.56348C16.8125 2.56348 20.6875 6.50098 20.6875 11.376C20.6875 16.251 16.75 20.1885 11.875 20.1885ZM11.875 0.813477C6.0625 0.813477 1.3125 5.56348 1.3125 11.376C1.3125 13.3135 1.8125 15.1885 2.8125 16.8135L0.875 22.501L6.75 20.626C8.3125 21.501 10.0625 21.9385 11.875 21.9385C17.6875 21.9385 22.4375 17.1885 22.4375 11.376C22.4375 5.56348 17.75 0.813477 11.875 0.813477Z"
-                                        fill="white" />
-                                </svg>
+        </section>
+        <section id="catalog" class="catalog section-offset">
+            <div class="catalog__container container">
+                <h2 class="catalog__title section-title">
+                    Каталог
+                </h2>
+                <p class="catalog__descr section-descr">
+                    Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского
+                    типа
+                    политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь
+                    всего
+                    лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей
+                    день
+                    остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                </p>
+                <div class="catalog__wrapper">
+                    <div class="catalog__content">
+                        <article class="catalog__painter painter tabs-content" data-target="1">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/benedito-di-bingo.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Бенедетто ди Биндо
+                            </h3>
+                            <p class="painter__birthday">
+                                ок 1380-85 — 9 сентября 1417
+                            </p>
+                            <p class="painter__descr section-descr">
+                                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать,
+                                «второго
+                                ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных
+                                заказов,
+                                включая работы в Сиенском соборе (работы в главном соборе республики второстепенным
+                                художникам не поручались). Обучение он прошёл у Таддео ди Бартоло, крупного сиенского
+                                мастера поздней готики, в боттеге которого Бенедетто трудился вместе с Грегорио ди
+                                Чекко.
+                                Наибольшее влияние на его творчество оказали работы Симоне Мартини, в частности в выборе
+                                колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни да
+                                Милано.
+                            </p>
+                        </article>
+                        <article class="catalog__painter painter tabs-content" data-target="2">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/bergonyone.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Бергоньоне, Амброджо
+                            </h3>
+                            <p class="painter__birthday">
+                                ок 1380-85 — 9 сентября 1417
+                            </p>
+                            <p class="painter__descr section-descr">
+                                Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо
+                                Фоппа.
+                                Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486–1494 в монастырской
+                                обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике
+                                Сант-Эусторджо и
+                                церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова
+                                в
+                                Милане, в базилике Сан-Симпличано.
+                            </p>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="3">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
                             </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="4">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="5">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="6">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="7">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="8">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="9">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="10">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="11">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter tabs-content active" data-target="12">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/domenico-ghirlandaio.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Доменико Гирландайо
+                            </h3>
+                            <p class="painter__birthday">
+                                2 июня 1448–11 января 1494
+                            </p>
+                            <p class="painter__descr section-descr">
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                                династии,
+                                которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской,
+                                где юный
+                                Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                                циклов,
+                                в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских
+                                персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="13">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="14">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="15">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="16">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="17">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="18">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="19">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="20">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="21">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="22">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="23">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                        <article class="catalog__painter painter painter_disabled tabs-content" data-target="24">
+                            <picture class="painter__avatar">
+                                <img src="assets/img/catalog/painters/disabled.jpg" alt="Портрет художника"
+                                    class="painter__avatar-img">
+                            </picture>
+                            <h3 class="painter__name">
+                                Что мы о нём знаем?
+                            </h3>
+                            <p class="painter__descr section-descr">
+                                Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </p>
+                            <a href="#gallery" class="painter__link disabled-block-link gallery-link">
+                                В галерею
+                            </a>
+                        </article>
+                    </div>
+                    <ul class="catalog__periods periods">
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 1400 по 1499 гг
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <ul class="painters__list">
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="1">
+                                                Бенедетто ди Биндо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="2">
+                                                Бергоньоне, Амброджо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="3">
+                                                Биссоло, Франческо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="4">
+                                                Больтраффио, Джованни
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="5">
+                                                Бонсиньори, Франческо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="6">
+                                                Боттичини, Рафаэлло
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="7">
+                                                Брамантино
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="8">
+                                                Бреа, Людовико
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="9">
+                                                Бьяджо д’Антонио Туччи
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <ul class="painters__list">
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="10">
+                                                Веккьетта
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="11">
+                                                Андреа Верроккьо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn active" data-path="12">
+                                                Доменико Гирландайо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="13">
+                                                Беноццо Гоццоли
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="14">
+                                                Граначчи, Франческо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="15">
+                                                Грегорио ди Чекко
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="16">
+                                                Джованни да Удине
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="17">
+                                                Джованни ди Паоло
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="18">
+                                                Джорджоне
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <ul class="painters__list">
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="19">
+                                                Парентино, Бернардо
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="20">
+                                                Пезеллино
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="21">
+                                                Пьетро Перуджино
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="22">
+                                                Перуцци, Бальдассаре
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="23">
+                                                Пизанелло
+                                            </button>
+                                        </li>
+                                        <li class="painters__item">
+                                            <button class="painters__item-btn tabs-btn" data-path="24">
+                                                Пинтуриккьо
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class="connection__socials-item">
-                            <a href="#" class="connection__socials-link connection__socials-link_telegram">
-                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M2.05321 7.7889L13.7168 2.7649C19.2711 0.454701 20.4251 0.0534209 21.1774 0.0401809C21.3429 0.0372609 21.7128 0.0782604 21.9524 0.2727C22.1548 0.436861 22.2104 0.658701 22.2371 0.814301C22.2637 0.969901 22.2969 1.32458 22.2705 1.60166C21.9695 4.76406 20.6671 12.4386 20.0046 15.9806C19.7242 17.4794 19.1726 17.9819 18.6378 18.0311C17.4763 18.138 16.5944 17.2635 15.4694 16.5261L11.0061 13.528C9.03145 12.2268 10.3115 11.5116 11.4369 10.3428C11.7314 10.0368 16.8487 5.38226 16.9477 4.96002C16.9597 4.90722 16.9716 4.71042 16.8547 4.60642C16.7377 4.50242 16.565 4.53842 16.4405 4.5663C16.264 4.60638 13.452 6.46502 8.00445 10.1423C7.20625 10.6904 6.48325 10.9575 5.83553 10.9435C5.12141 10.9281 3.74777 10.5397 2.72661 10.2078C1.47408 9.80066 0.478605 9.58538 0.565325 8.89394C0.610445 8.53382 1.1064 8.16554 2.05317 7.78898L2.05321 7.7889Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 1500 по 1599 гг
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <div class="painters__disabled-block disabled-block">
+                                        <div class="disabled-block__decor">
+                                            <div class="disabled-block__decor-square"></div>
+                                        </div>
+                                        <div class="disabled-block__wrapper">
+                                            <p class="disabled-block__title disabled-block-title">
+                                                Здесь пока пусто
+                                            </p>
+                                            <p class="disabled-block__descr disabled-block-descr">
+                                                А в галерее вы всегда можете найти что-то интересное для себя
+                                            </p>
+                                            <a href="#gallery"
+                                                class="disabled-block__link disabled-block-link gallery-link">
+                                                В галерею
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 1600 по 1699 гг
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <div class="painters__disabled-block disabled-block">
+                                        <div class="disabled-block__decor">
+                                            <div class="disabled-block__decor-square"></div>
+                                        </div>
+                                        <div class="disabled-block__wrapper">
+                                            <p class="disabled-block__title disabled-block-title">
+                                                Здесь пока пусто
+                                            </p>
+                                            <p class="disabled-block__descr disabled-block-descr">
+                                                А в галерее вы всегда можете найти что-то интересное для себя
+                                            </p>
+                                            <a href="#gallery"
+                                                class="disabled-block__link disabled-block-link gallery-link">
+                                                В галерею
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 1700 по 1799 гг
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <div class="painters__disabled-block disabled-block">
+                                        <div class="disabled-block__decor">
+                                            <div class="disabled-block__decor-square"></div>
+                                        </div>
+                                        <div class="disabled-block__wrapper">
+                                            <p class="disabled-block__title disabled-block-title">
+                                                Здесь пока пусто
+                                            </p>
+                                            <p class="disabled-block__descr disabled-block-descr">
+                                                А в галерее вы всегда можете найти что-то интересное для себя
+                                            </p>
+                                            <a href="#gallery"
+                                                class="disabled-block__link disabled-block-link gallery-link">
+                                                В галерею
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 1800 по 1899 гг
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <div class="painters__disabled-block disabled-block">
+                                        <div class="disabled-block__decor">
+                                            <div class="disabled-block__decor-square"></div>
+                                        </div>
+                                        <div class="disabled-block__wrapper">
+                                            <p class="disabled-block__title disabled-block-title">
+                                                Здесь пока пусто
+                                            </p>
+                                            <p class="disabled-block__descr disabled-block-descr">
+                                                А в галерее вы всегда можете найти что-то интересное для себя
+                                            </p>
+                                            <a href="#gallery"
+                                                class="disabled-block__link disabled-block-link gallery-link">
+                                                В галерею
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 1900 по 1999 гг
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <div class="painters__disabled-block disabled-block">
+                                        <div class="disabled-block__decor">
+                                            <div class="disabled-block__decor-square"></div>
+                                        </div>
+                                        <div class="disabled-block__wrapper">
+                                            <p class="disabled-block__title disabled-block-title">
+                                                Здесь пока пусто
+                                            </p>
+                                            <p class="disabled-block__descr disabled-block-descr">
+                                                А в галерее вы всегда можете найти что-то интересное для себя
+                                            </p>
+                                            <a href="#gallery"
+                                                class="disabled-block__link disabled-block-link gallery-link">
+                                                В галерею
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="periods__item accor">
+                            <button class="periods__period period accor-open">
+                                <span class="period__text">
+                                    C 2000 г
+                                </span>
+                                <span class="period__decor accor-open-decor">
+                                    <svg class="period__icon accor-open-icon" width="18" height="11" viewBox="0 0 18 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="periods__painters painters accor-full">
+                                <div class="painters__container accor-full-content">
+                                    <div class="painters__disabled-block disabled-block">
+                                        <div class="disabled-block__decor">
+                                            <div class="disabled-block__decor-square"></div>
+                                        </div>
+                                        <div class="disabled-block__wrapper">
+                                            <p class="disabled-block__title disabled-block-title">
+                                                Здесь пока пусто
+                                            </p>
+                                            <p class="disabled-block__descr disabled-block-descr">
+                                                А в галерее вы всегда можете найти что-то интересное для себя
+                                            </p>
+                                            <a href="#gallery"
+                                                class="disabled-block__link disabled-block-link gallery-link">
+                                                В галерею
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </form>
-    </section>
+        </section>
+        <section id="events" class="events section-offset">
+            <div class="events__container container">
+                <h2 class="events__title section-title">
+                    События
+                </h2>
+                <div class="events__wrapper">
+                    <div class="events__slider swiper">
+                        <div class="events__slider-wrapper swiper-wrapper">
+                            <div class="events__slide event swiper-slide">
+                                <picture class="event__picture">
+                                    <img src="assets/img/events/book-engraving.jpg" alt="Изображение события"
+                                        class="event__image">
+                                </picture>
+                                <div class="event__content">
+                                    <p class="event__place">
+                                        <span>Музей им. Щусева</span>
+                                        <span>с 20 марта по 30 апреля</span>
+                                    </p>
+                                    <h3 class="event__title">
+                                        Книжная гравюра <br> в живом восприятии
+                                    </h3>
+                                    <p class="event__descr">
+                                        Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                                        династии, которую продолжили его брат Давид и сын Ридольфо
+                                    </p>
+                                    <a href="" class="event__link">
+                                        <span class="event__link-text">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="events__slide event swiper-slide">
+                                <picture class="event__picture">
+                                    <img src="assets/img/events/open-discussion.jpg" alt="Изображение события"
+                                        class="event__image">
+                                </picture>
+                                <div class="event__content">
+                                    <p class="event__place">
+                                        <span>ММОМА</span>
+                                        <span>24 марта 19:00</span>
+                                    </p>
+                                    <h3 class="event__title">
+                                        «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                                    </h3>
+                                    <p class="event__descr">
+                                        Высокий уровень вовлечения представителей целевой аудитории является чётким
+                                        доказательством простого факта
+                                    </p>
+                                    <a href="" class="event__link">
+                                        <span class="event__link-text">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="events__slide event swiper-slide">
+                                <picture class="event__picture">
+                                    <img src="assets/img/events/exhibition.jpg" alt="Изображение события"
+                                        class="event__image">
+                                </picture>
+                                <div class="event__content">
+                                    <p class="event__place">
+                                        <span>Еврейский музей</span>
+                                        <span>с 31 марта по 21 апреля</span>
+                                    </p>
+                                    <h3 class="event__title">
+                                        Выставка «Формация 2020»
+                                    </h3>
+                                    <p class="event__descr">
+                                        Идейные соображения высшего порядка, а также современная методология разработки
+                                        играет важную роль в формировании глубокомысленных рассуждений
+                                    </p>
+                                    <a href="" class="event__link">
+                                        <span class="event__link-text">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="events__slide event swiper-slide">
+                                <picture class="event__picture">
+                                    <img src="assets/img/events/metaphor.jpg" alt="Изображение события"
+                                        class="event__image">
+                                </picture>
+                                <div class="event__content">
+                                    <p class="event__place">
+                                        <span>ММАМ</span>
+                                        <span>с 8 апреля по 20 мая</span>
+                                    </p>
+                                    <h3 class="event__title">
+                                        Джон Винзор. Фотографии из серии «Метафора»
+                                    </h3>
+                                    <p class="event__descr">
+                                        Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                                        династии, которую продолжили его брат Давид и сын Ридольфо
+                                    </p>
+                                    <a href="" class="event__link">
+                                        <span class="event__link-text">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="events__slide event swiper-slide">
+                                <picture class="event__picture">
+                                    <img src="assets/img/events/biennale.jpg" alt="Изображение события"
+                                        class="event__image">
+                                </picture>
+                                <div class="event__content">
+                                    <p class="event__place">
+                                        <span>Третьяковка на Крымском валу</span>
+                                        <span>с 30 марта по 30 апреля</span>
+
+                                    </p>
+                                    <h3 class="event__title">
+                                        XXIV Международная биеннале молодого искусства
+                                    </h3>
+                                    <p class="event__descr">
+                                        Внезапно, реплицированные с зарубежных источников, современные исследования
+                                    </p>
+                                    <a href="" class="event__link">
+                                        <span class="event__link-text">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events__slider-button events__slider-button_prev">
+                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33334 0.666663L9.66667 9L1.33334 17.3333" stroke="black" />
+                        </svg>
+                    </div>
+                    <div class="events__slider-button events__slider-button_next">
+                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33334 0.666663L9.66667 9L1.33334 17.3333" stroke="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects section-offset">
+            <div class="projects__container container">
+                <h2 class="projects__title section-title">
+                    Проекты
+                </h2>
+                <p class="projects__descr section-descr">
+                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
+                    однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
+                    государства
+                    смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает
+                    их статус
+                    бесполезности. Прежде всего, постоянное информационно-пропагандистское
+                    <button class="tooltip">
+                        <span class="tooltip__preview">
+                            <span class="tooltip__preview-wrapper">
+                                <svg class="tooltip__icon" width="2" height="10" viewBox="0 0 2 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="tooltip__detail">
+                            Пример современных тенденций — современная методология разработки
+                        </span>
+                    </button>
+                    обеспечение нашей деятельности
+                    однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
+                    И нет сомнений,
+                    что действия представителей оппозиции могут быть рассмотрены
+                    <button class="tooltip">
+                        <span class="tooltip__preview">
+                            <span class="tooltip__preview-wrapper">
+                                <svg class="tooltip__icon" width="2" height="10" viewBox="0 0 2 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="tooltip__detail">
+                            Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции
+                        </span>
+                    </button>
+                    исключительно в разрезе маркетинговых
+                    и финансовых
+                    <button class="tooltip">
+                        <span class="tooltip__preview">
+                            <span class="tooltip__preview-wrapper">
+                                <svg class="tooltip__icon" width="2" height="10" viewBox="0 0 2 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="tooltip__detail">
+                            В стремлении повысить качество
+                        </span>
+                    </button>
+                    предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+                    социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
+                    с не уникальными данными до степени совершённой неузнаваемости. Подробнее:
+                    <a href="" class="projects__descr-link">
+                        <span class="projects__descr-link-text">
+                            blanchard-art.ru/projects
+                        </span>
+                    </a>
+                </p>
+                <div class="projects__partners partners">
+                    <p class="partners__title">
+                        Партнёры проектов:
+                    </p>
+                    <div class="partners__wrapper">
+                        <div class="partners__slider swiper">
+                            <div class="partners__slider-wrapper swiper-wrapper">
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/freelads.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/contemporary.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/workhouse.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/1849.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/hiscox.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/camden.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/stanen.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/watts.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                                <div class="partners__slide partner swiper-slide">
+                                    <a href="#" class="partner__link">
+                                        <img src="assets/img/partners/ecole.png" alt="Логотип партнера"
+                                            class="partner__logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__slider-button partners__slider-button_prev">
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 11L0.999995 6L6 0.999998" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="partners__slider-button partners__slider-button_next">
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L6.00001 6L1 0.999997" stroke="black" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <form action="#" method="post" class="contacts__form form">
+                <div class="form__container container">
+                    <div class="form__address">
+                        <h3 class="form__address-title form__title">
+                            Шоурум №4
+                        </h3>
+                        <p class="form__address-descr">
+                            Леонтьевский переулок, дом 5/1
+                        </p>
+                    </div>
+                    <div class="form__fields">
+                        <label class="form__label">
+                            <input type="text" name="name" placeholder="Имя*" class="form__input name">
+                        </label>
+                        <label class="form__label">
+                            <input type="tel" name="tel" placeholder="Телефон*" class="form__input phone">
+                        </label>
+                        <button type="submit" class="form__btn">
+                            Заказать обратный звонок
+                        </button>
+                    </div>
+                    <div class="form__connection connection">
+                        <h3 class="connection__title form__title">
+                            Связаться в один клик
+                        </h3>
+                        <ul class="connection__socials">
+                            <li class="connection__socials-item">
+                                <a href="#" class="connection__socials-link connection__socials-link_whatsapp">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.875 13.751C16.625 13.626 15.3125 12.876 15.0625 12.8135C14.8125 12.6885 14.625 12.6885 14.4375 12.9385C14.25 13.1885 13.6875 13.8135 13.5625 13.9385C13.375 14.126 13.25 14.126 13 14.001C12.75 13.876 11.875 13.5635 10.875 12.5635C10.125 11.8135 9.5625 10.9385 9.4375 10.626C9.3125 10.376 9.4375 10.1885 9.5625 10.0635C9.6875 9.93848 9.8125 9.75098 10 9.62598C10.1875 9.50098 10.1875 9.37598 10.3125 9.18848C10.4375 9.00098 10.375 8.87598 10.3125 8.68848C10.25 8.50098 9.75 7.18848 9.5625 6.62598C9.375 6.06348 9.125 6.18848 9 6.12598C8.8125 6.12598 8.6875 6.06348 8.5 6.06348C8.25 6.06348 7.9375 6.18848 7.75 6.37598C7.5 6.62598 6.75 7.25098 6.75 8.56348C6.75 9.87598 7.625 11.251 7.75 11.376C7.875 11.5635 9.5 14.4385 12.1875 15.626C14.875 16.8135 14.875 16.4385 15.375 16.4385C15.875 16.4385 17 15.8135 17.25 15.251C17.5 14.626 17.5 14.0635 17.4375 14.001C17.3125 14.001 17.125 13.9385 16.875 13.751ZM11.875 20.1885C10.125 20.1885 8.5 19.6885 7.0625 18.751L3.6875 19.8135L4.8125 16.5635C3.75 15.0635 3.125 13.251 3.125 11.376C3.125 6.50098 7.0625 2.56348 11.9375 2.56348C16.8125 2.56348 20.6875 6.50098 20.6875 11.376C20.6875 16.251 16.75 20.1885 11.875 20.1885ZM11.875 0.813477C6.0625 0.813477 1.3125 5.56348 1.3125 11.376C1.3125 13.3135 1.8125 15.1885 2.8125 16.8135L0.875 22.501L6.75 20.626C8.3125 21.501 10.0625 21.9385 11.875 21.9385C17.6875 21.9385 22.4375 17.1885 22.4375 11.376C22.4375 5.56348 17.75 0.813477 11.875 0.813477Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="connection__socials-item">
+                                <a href="#" class="connection__socials-link connection__socials-link_telegram">
+                                    <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.05321 7.7889L13.7168 2.7649C19.2711 0.454701 20.4251 0.0534209 21.1774 0.0401809C21.3429 0.0372609 21.7128 0.0782604 21.9524 0.2727C22.1548 0.436861 22.2104 0.658701 22.2371 0.814301C22.2637 0.969901 22.2969 1.32458 22.2705 1.60166C21.9695 4.76406 20.6671 12.4386 20.0046 15.9806C19.7242 17.4794 19.1726 17.9819 18.6378 18.0311C17.4763 18.138 16.5944 17.2635 15.4694 16.5261L11.0061 13.528C9.03145 12.2268 10.3115 11.5116 11.4369 10.3428C11.7314 10.0368 16.8487 5.38226 16.9477 4.96002C16.9597 4.90722 16.9716 4.71042 16.8547 4.60642C16.7377 4.50242 16.565 4.53842 16.4405 4.5663C16.264 4.60638 13.452 6.46502 8.00445 10.1423C7.20625 10.6904 6.48325 10.9575 5.83553 10.9435C5.12141 10.9281 3.74777 10.5397 2.72661 10.2078C1.47408 9.80066 0.478605 9.58538 0.565325 8.89394C0.610445 8.53382 1.1064 8.16554 2.05317 7.78898L2.05321 7.7889Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <div id="map" style="width: 100%; height: 700px"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <a href="/" class="footer__logo logo">
+                <img src="assets/img/header/logo.svg" alt="Логотип компании Blanchard" class="logo__image">
+            </a>
+            <ul class="footer__social social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__link-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
+                                fill="#CACACA" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__link-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
+                                fill="#CACACA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z"
+                                fill="#CACACA" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.758468, 37.601088],
+                zoom: 14,
+            });
+
+            var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'assets/img/contacts/map-marker.svg',
+                iconImageSize: [20, 20],
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
     <script src="assets/js/simplebar.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/choices.js"></script>

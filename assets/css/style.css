@@ -251,7 +251,7 @@ body {
     margin-right: 174px;
 }
 
-.header__logo:focus {
+.logo:focus {
     outline: 2px solid #C283F3;
     outline-offset: 5px;
 }
@@ -701,6 +701,7 @@ body {
 .promo__btn {
     padding: 21.5px 29px;
     min-width: 314px;
+    width: max-content;
     background-color: #9D5CD0;
     font-weight: 700;
     font-size: 18px;
@@ -1966,5 +1967,105 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #D11616!important;
+    color: #D11616 !important;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.ymaps-2-1-79-controls__control {
+    inset: 275px 10px auto auto !important;
+}
+
+.ymaps-2-1-79-controls__control_toolbar {
+    display: none !important;
+}
+
+.ymaps-2-1-79-controls__toolbar_left .ymaps-2-1-79-user-selection-none {
+    display: block !important;
+    inset: 330px 10px auto auto !important;
+}
+
+.ymaps-2-1-79-controls__toolbar {
+    top: 330px!important;
+    left: auto!important;
+    right: 10px!important;
+    width: auto!important;
+}
+
+.ymaps-2-1-79-zoom {
+    height: 5px !important;
+    background-color: #fff !important;
+    border-radius: 3px !important;
+    box-shadow: 0 1px 2px 1px rgb(0 0 0 / 15%), 0 2px 5px -3px rgb(0 0 0 / 15%);
+}
+
+.ymaps-2-1-79-zoom__scale {
+    display: none;
+}
+
+.ymaps-2-1-79-float-button {
+    box-shadow: none !important;
+}
+
+.ymaps-2-1-79-_hidden-text {
+    box-shadow: 0 1px 2px 1px rgb(0 0 0 / 15%), 0 2px 5px -3px rgb(0 0 0 / 15%) !important;
+}
+
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
+
+.contacts .ymaps-2-1-79-copyright {
+    display: none;
+}
+
+.ymaps-2-1-79-copyright__layout {
+    display: none;
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    padding: 48px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-right: 20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {
+    margin-right: 20px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__link-icon path {
+    transition: fill .2s ease;
+}
+
+.social__link:focus .social__link-icon path {
+    fill: #fff;
+}
+
+.social__link:hover .social__link-icon path {
+    fill: #fff;
+}
+
+.social__link:active .social__link-icon path {
+    fill: #9D5CD0;
 }
