@@ -952,6 +952,19 @@ body {
     position: relative;
 }
 
+.slider-gallery__slide:focus {
+    outline: 3px solid #7943A4;
+    outline-offset: -3px;
+}
+
+.slider-gallery__slide:hover {
+    outline: none;
+}
+
+.slider-gallery__slide:active {
+    outline: none;
+}
+
 .slider-gallery__slide::after {
     content: '';
     position: absolute;
