@@ -3,6 +3,9 @@ function getHeight(el) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    let body = document.querySelector('body');
+
+    // heder deopdown menu SimpleBar
     document.querySelectorAll(".menu-bottom__simplebar").forEach(dropdown => {
         new SimpleBar(dropdown, {
             autoHide: false,
@@ -10,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // heder deopdown menu
     const itemsMenuBottom = document.querySelectorAll('.menu-bottom__item-open');
 
     for (let i = 0; i < itemsMenuBottom.length; i += 1) {
@@ -32,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // promo slider
     const promoSlider = new Swiper('.promo__slider', {
         slidesPerView: 1,
         speed: 2000,
@@ -47,11 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
         searchEnabled: false,
     });
 
+    // gallery slider
     const gallerySlider = new Swiper('.gallery__slider', {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50,
-        touchRatio: false,
         navigation: {
             nextEl: '.slider-gallery__button-next',
             prevEl: '.slider-gallery__button-prev',
@@ -59,6 +61,32 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: {
             el: '.slider-gallery__pagination',
             type: 'fraction',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 30,
+                touchRatio: true,
+            },
+            576: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 38,
+                touchRatio: true,
+            },
+            1025: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 34,
+                touchRatio: false,
+            },
+            1400: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 50,
+                touchRatio: false,
+            },
         },
     });
 
@@ -218,4 +246,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 errorMessage: 'Введите номер телефона полностью',
             },
         ]);
+
+    // search mobile
+    let searchOpen = document.querySelector('.search__open');
+    let searchClose = document.querySelector('.search__close');
+    let searchWrapper = document.querySelector('.search__wrapper');
+
+    searchOpen.addEventListener('click', function () {
+        searchWrapper.classList.add('active');
+    });
+
+    searchClose.addEventListener('click', function () {
+        searchWrapper.classList.remove('active');
+    });
+
+    window.addEventListener('click', function (e) {
+        const target = e.target;
+        if (!target.closest('.search')) {
+            searchWrapper.classList.remove('active');
+        }
+    });
+
+    // header menu mobile
+    let headerMenuButton = document.querySelector('.header__menu-open');
+    let headerMenu = document.querySelector('.header__wrapper');
+
+    headerMenuButton.addEventListener('click', function () {
+        headerMenuButton.classList.toggle('active');
+        headerMenu.classList.toggle('active');
+        body.classList.toggle('lock');
+    });
 });

@@ -18,40 +18,67 @@
     <header class="header">
         <div class="header__top">
             <div class="header__top-container container">
+                <button class="header__menu-open">
+                    <span class="header__menu-open-decor"></span>
+                </button>
                 <a href="/" class="header__logo logo">
                     <img src="assets/img/header/logo.svg" alt="Логотип компании Blanchard" class="logo__image">
                 </a>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#about" class="menu__link">О нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#gallery" class="menu__link">Галерея</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#catalog" class="menu__link">Каталог</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#events" class="menu__link">События</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#projects" class="menu__link">Проекты</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contacts" class="menu__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="header__enter">
-                    <svg class="header__enter-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                            fill="white" />
-                    </svg>
-                    <span class="header__enter-text">Войти</span>
-                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#about" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#gallery" class="menu__link">Галерея</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#catalog" class="menu__link">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#events" class="menu__link">События</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#projects" class="menu__link">Проекты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__enter">
+                        <span class="header__enter-wrapper">
+                            <span class="header__enter-decor">
+                                <svg class="header__enter-icon" width="18" height="13" viewBox="0 0 18 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z"
+                                        fill="#fff" />
+                                </svg>
+                            </span>
+                            <span class="header__enter-text">Войти</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="header__search search">
+                    <button class="search__open">
+                        <img aria-label="presentation" src="assets/img/header/search.svg" class="search__icon">
+                    </button>
+                    <div class="search__wrapper">
+                        <img aria-label="presentation" src="assets/img/header/search.svg" class="search__icon">
+                        <input placeholder="Поиск по сайту" type="text" class="search__input">
+                        <button class="search__close">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="29.567" height="2.9567"
+                                    transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white" />
+                                <rect width="29.567" height="2.9567"
+                                    transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header__bottom">
@@ -255,10 +282,6 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__search search">
-                    <img aria-div="presentation" src="assets/img/header/search.svg" class="search__icon">
-                    <input placeholder="Поиск по сайту" type="text" class="search__input">
-                </div>
             </div>
         </div>
     </header>
@@ -374,28 +397,58 @@
                         <div class="gallery__slider slider-gallery swiper">
                             <div class="slider-gallery__wrapper swiper-wrapper">
                                 <button class="slider-gallery__slide swiper-slide">
-                                    <img src="assets/img/gallery/slide-1.jpg" alt=""
-                                        class="slider-gallery__slide-image">
+                                    <picture>
+                                        <source media="(max-width: 320px)" srcset="assets/img/gallery/slide-1-320.jpg">
+                                        <source media="(max-width: 768px)" srcset="assets/img/gallery/slide-1-768.jpg">
+                                        <source media="(max-width: 1024px)" srcset="assets/img/gallery/slide-1-1024.jpg">
+                                        <img src="assets/img/gallery/slide-1.jpg" alt="Слайд номер 1"
+                                            class="slider-gallery__slide-image">
+                                    </picture>
                                 </button>
                                 <button class="slider-gallery__slide swiper-slide">
-                                    <img src="assets/img/gallery/slide-2.jpg" alt=""
-                                        class="slider-gallery__slide-image">
+                                    <picture>
+                                        <source media="(max-width: 320px)" srcset="assets/img/gallery/slide-2-320.jpg">
+                                        <source media="(max-width: 768px)" srcset="assets/img/gallery/slide-2-768.jpg">
+                                        <source media="(max-width: 1024px)" srcset="assets/img/gallery/slide-2-1024.jpg">
+                                        <img src="assets/img/gallery/slide-2.jpg" alt="Слайд номер 2"
+                                            class="slider-gallery__slide-image">
+                                    </picture>
                                 </button>
                                 <button class="slider-gallery__slide swiper-slide">
-                                    <img src="assets/img/gallery/slide-3.jpg" alt=""
-                                        class="slider-gallery__slide-image">
+                                    <picture>
+                                        <source media="(max-width: 320px)" srcset="assets/img/gallery/slide-3-320.jpg">
+                                        <source media="(max-width: 768px)" srcset="assets/img/gallery/slide-3-768.jpg">
+                                        <source media="(max-width: 1024px)" srcset="assets/img/gallery/slide-3-1024.jpg">
+                                        <img src="assets/img/gallery/slide-3.jpg" alt="Слайд номер 3"
+                                            class="slider-gallery__slide-image">
+                                    </picture>
                                 </button>
                                 <button class="slider-gallery__slide swiper-slide">
-                                    <img src="assets/img/gallery/slide-4.jpg" alt=""
-                                        class="slider-gallery__slide-image">
+                                    <picture>
+                                        <source media="(max-width: 320px)" srcset="assets/img/gallery/slide-4-320.jpg">
+                                        <source media="(max-width: 768px)" srcset="assets/img/gallery/slide-4-768.jpg">
+                                        <source media="(max-width: 1024px)" srcset="assets/img/gallery/slide-4-1024.jpg">
+                                        <img src="assets/img/gallery/slide-4.jpg" alt="Слайд номер 4"
+                                            class="slider-gallery__slide-image">
+                                    </picture>
                                 </button>
                                 <button class="slider-gallery__slide swiper-slide">
-                                    <img src="assets/img/gallery/slide-5.jpg" alt=""
-                                        class="slider-gallery__slide-image">
+                                    <picture>
+                                        <source media="(max-width: 320px)" srcset="assets/img/gallery/slide-5-320.jpg">
+                                        <source media="(max-width: 768px)" srcset="assets/img/gallery/slide-5-768.jpg">
+                                        <source media="(max-width: 1024px)" srcset="assets/img/gallery/slide-5-1024.jpg">
+                                        <img src="assets/img/gallery/slide-5.jpg" alt="Слайд номер 5"
+                                            class="slider-gallery__slide-image">
+                                    </picture>
                                 </button>
                                 <button class="slider-gallery__slide swiper-slide">
-                                    <img src="assets/img/gallery/slide-6.jpg" alt=""
-                                        class="slider-gallery__slide-image">
+                                    <picture>
+                                        <source media="(max-width: 320px)" srcset="assets/img/gallery/slide-6-320.jpg">
+                                        <source media="(max-width: 768px)" srcset="assets/img/gallery/slide-6-768.jpg">
+                                        <source media="(max-width: 1024px)" srcset="assets/img/gallery/slide-6-1024.jpg">
+                                        <img src="assets/img/gallery/slide-6.jpg" alt="Слайд номер 6"
+                                            class="slider-gallery__slide-image">
+                                    </picture>
                                 </button>
                             </div>
                         </div>
@@ -403,7 +456,7 @@
                 </div>
             </div>
         </section>
-        <section id="catalog" class="catalog section-offset">
+        <!-- <section id="catalog" class="catalog section-offset">
             <div class="catalog__container container">
                 <h2 class="catalog__title section-title">
                     Каталог
@@ -1492,10 +1545,10 @@
                 </div>
             </form>
             <div id="map" style="width: 100%; height: 700px"></div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container container">
             <a href="/" class="footer__logo logo">
                 <img src="assets/img/header/logo.svg" alt="Логотип компании Blanchard" class="logo__image">
@@ -1524,7 +1577,7 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript">
