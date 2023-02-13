@@ -169,6 +169,32 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: '.events__slider-button_next',
             prevEl: '.events__slider-button_prev',
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 30,
+                touchRatio: true,
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 34,
+                touchRatio: true,
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 27,
+                touchRatio: false,
+            },
+            1400: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 50,
+                touchRatio: false,
+            },
+        },
     });
 
     // partners slider

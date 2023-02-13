@@ -1015,6 +1015,7 @@ body.lock {
 
 .catalog__content {
     max-width: 750px;
+    min-width: 750px;
     margin-right: 50px;
 }
 
@@ -1051,7 +1052,8 @@ body.lock {
 }
 
 .periods {
-    flex: 1 1 auto;
+    max-width: 800px;
+    width: 100%;
 }
 
 .period {
@@ -1156,11 +1158,13 @@ body.lock {
 }
 
 .painters__list {
-    margin-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
 }
 
-.painters__list:last-child {
-    margin-right: 0;
+.painters__item {
+    flex: 0 1 33.333%;
 }
 
 .disabled-block {
@@ -1170,6 +1174,7 @@ body.lock {
 
 .disabled-block__decor {
     width: 275px;
+    min-width: 275px;
     height: 189px;
     border: 2px solid #999;
     padding: 12px;
@@ -1239,6 +1244,7 @@ body.lock {
     line-height: 32px;
     color: #333;
     position: relative;
+    text-align: left;
 }
 
 .painters__item-btn::before {
@@ -2146,6 +2152,12 @@ body.lock {
     }
 }
 
+@media (max-width: 1600px) {
+    .painters__item {
+        flex: 0 1 50%;
+    }
+}
+
 @media (max-width: 1400px) {
 
     /* header */
@@ -2160,6 +2172,52 @@ body.lock {
 
     .menu-bottom__item {
         margin-right: 30px;
+    }
+
+    /* catalog */
+    .catalog__content {
+        max-width: none;
+        min-width: 0;
+        flex: 1 1 50%;
+    }
+
+    .catalog__periods {
+        flex: 1 1 50%;
+    }
+
+    .disabled-block__decor {
+        width: 189px;
+        min-width: 189px;
+        height: 130px;
+    }
+
+    /* events */
+    .event__content {
+        padding: 17px 34px 49px;
+    }
+
+    .event__place {
+        text-align: right;
+    }
+
+    .event__image {
+        min-height: 200px;
+    }
+
+    .event__place {
+        font-weight: 400;
+    }
+
+    .event__place {
+        margin-bottom: 2px;
+    }
+
+    .event__title {
+        margin-bottom: 6px;
+    }
+
+    .event__descr {
+        margin-bottom: -10px;
     }
 }
 
@@ -2186,6 +2244,11 @@ body.lock {
 
     .menu-bottom__item-text {
         font-size: 16px;
+    }
+
+    /* catalog */
+    .painter__avatar-img {
+        height: 274px;
     }
 }
 
@@ -2507,6 +2570,79 @@ body.lock {
     .filters__checkbox-group {
         margin-bottom: 38px;
     }
+
+    /* catalog */
+    .catalog__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .periods {
+        max-width: none;
+    }
+
+    .catalog__periods {
+        margin-bottom: 50px;
+    }
+
+    .painters__item {
+        flex: 1 1 33.333%;
+    }
+
+    .painters__item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .painters__item:last-child {
+        margin-right: 0;
+    }
+
+    .painters__list {
+        max-width: none;
+    }
+
+    .catalog__descr {
+        margin-bottom: 20px;
+    }
+
+    .catalog__content {
+        margin-right: 0;
+    }
+
+    .painter__avatar-img {
+        height: 420px;
+    }
+
+    .painter__avatar {
+        margin-bottom: 20px;
+    }
+
+    .painter__birthday {
+        margin-bottom: 8px;
+    }
+
+    .disabled-block__decor {
+        width: 275px;
+        min-width: 275px;
+        height: 189px;
+    }
+
+    /* events */
+    .event__content {
+        padding: 17px 18px 49px;
+    }
+
+    .event__title,
+    .event__descr {
+        padding: 0 16px;
+    }
+
+    .event__link {
+        margin: 0 16px;
+    }
+
+    .event__descr {
+        margin-bottom: 24px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2516,6 +2652,11 @@ body.lock {
         font-size: 50px;
         line-height: 120%;
         margin-bottom: 0;
+    }
+
+    /* catalog */
+    .painters__item {
+        flex: 0 1 50%;
     }
 }
 
@@ -2677,7 +2818,7 @@ body.lock {
         padding-bottom: 100px;
         background-image: url('../img/gallery/background-320.jpg');
     }
-    
+
     .gallery__title {
         margin-bottom: 16px;
     }
@@ -2700,12 +2841,84 @@ body.lock {
     .gallery__filters {
         max-width: none;
     }
-    
+
     .filters__select {
         margin-bottom: 31px;
     }
 
     .filters__checkbox-group {
         margin-bottom: 29px;
+    }
+
+    /* catalog */
+    .catalog__descr {
+        display: none;
+    }
+
+    .period__text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+
+    .period__decor {
+        width: 30px;
+        height: 30px;
+    }
+
+    .painters__item {
+        flex: 1 1 100%;
+    }
+
+    .disabled-block__decor {
+        width: 275px;
+        min-width: 275px;
+        height: 189px;
+    }
+
+    .disabled-block__decor {
+        width: 90px;
+        min-width: 90px;
+        height: 130px;
+    }
+
+    .disabled-block__title {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .disabled-block-descr {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .period__icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .painter__avatar-img {
+        height: 180px;
+    }
+
+    .painter__descr {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .catalog__title {
+        margin-bottom: 14px;
+    }
+    
+    .period {
+        padding: 20px 0;
+    }
+
+    .painters__container  {
+        padding: 20px 0;
+    }
+
+    .painter__birthday {
+        margin-bottom: 14px;
     }
 }
