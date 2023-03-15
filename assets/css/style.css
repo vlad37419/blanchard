@@ -1738,44 +1738,25 @@ body.lock {
     fill: #fff;
 }
 
-.tooltip__detail {
+.tippy-content {
     padding: 8px 11px;
     background-color: #9D5CD0;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 14px;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     color: #fff;
-    width: max-content;
+    width: fit-content;
     max-width: 264px;
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .2s ease, visiability .2s ease;
 }
 
-.tooltip__detail::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 7px solid transparent;
-    border-top: 9px solid #9D5CD0;
-}
-
-.tooltip.active .tooltip__detail {
-    opacity: 1;
-    visibility: visible;
+.tippy-arrow::before {
+    color: #9D5CD0;
 }
 
 /* contacts */
 .form {
-    padding: 38px 0;
+    padding: 40px 0;
     border: 1px solid #CACACA;
 }
 
@@ -1810,10 +1791,12 @@ body.lock {
 
 .form__label {
     position: relative;
+    flex: 0 1 270px;
+    margin-right: 20px;
 }
 
 .form__input {
-    width: 270px;
+    width: 100%;
     height: 50px;
     border: 1px solid #333;
     border-radius: 100px;
@@ -1822,7 +1805,6 @@ body.lock {
     color: #333;
     cursor: pointer;
     padding: 0 24px;
-    margin-right: 20px;
     transition: background-color .2s ease;
 }
 
@@ -2010,6 +1992,10 @@ body.lock {
 
 .social__item:last-child {
     margin-right: 0;
+}
+
+.social__link {
+    display: flex;
 }
 
 .social__link-icon path {
@@ -2243,16 +2229,53 @@ body.lock {
         height: 10px;
         opacity: 1;
         padding: 0;
-        margin: 0 15px 0 0!important;
+        margin: 0 15px 0 0 !important;
         background-color: #CACACA;
     }
 
     .events__slider-pagination .swiper-pagination-bullet:last-child {
-        margin-right: 0!important;
+        margin-right: 0 !important;
     }
 
     .events__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: #666;
+    }
+
+    /* contacts */
+    .form__container {
+        display: block;
+    }
+
+    .form__address {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .form__fields {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .form__address-descr {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .form__address-title {
+        margin-bottom: 10px;
+    }
+
+    .form__btn {
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+
+    .form__fields {
+        margin-bottom: 20px;
+    }
+
+    .form__label {
+        margin-bottom: 10px;
     }
 }
 
@@ -2284,6 +2307,16 @@ body.lock {
     /* catalog */
     .painter__avatar-img {
         height: 274px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 40px 0;
+    }
+
+    .social__link-icon {
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -2548,7 +2581,7 @@ body.lock {
     .partners__wrapper {
         padding: 0 53px;
     }
-    
+
     .partner__link {
         min-height: initial;
         height: 128px;
@@ -2691,7 +2724,44 @@ body.lock {
     }
 
     .event__descr {
+        margin-bottom: 20px;
+    }
+
+    /* projects */
+    .partner__link {
+        padding: 0 24px;
+        height: 106px;
+    }
+
+    .projects__descr {
         margin-bottom: 24px;
+    }
+
+    .partners__title {
+        margin-bottom: 30px;
+    }
+
+    /* contacts */
+    .form {
+        padding: 43px 0;
+    }
+
+    .form__fields {
+        flex-wrap: wrap;
+    }
+
+    .form__label {
+        flex: 0 1 calc(50% - 10px);
+    }
+
+    .form__label:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .form__btn {
+        flex: 0 1 calc(50% - 10px);
+        padding: 0 10px;
+        min-width: 0;
     }
 }
 
@@ -2707,6 +2777,35 @@ body.lock {
     /* catalog */
     .painters__item {
         flex: 0 1 50%;
+    }
+
+    /* contacts */
+    .form__fields {
+        display: block;
+    }
+
+    .form__label {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .form__btn {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #map {
+        height: 320px !important;
+    }
+
+    .ymaps-2-1-79-controls__control {
+        inset: 120px 10px auto auto !important;
+    }
+    .ymaps-2-1-79-controls__toolbar_left .ymaps-2-1-79-user-selection-none {
+        display: block !important;
+        inset: 150px 10px auto auto !important;
     }
 }
 
@@ -2959,12 +3058,12 @@ body.lock {
     .catalog__title {
         margin-bottom: 14px;
     }
-    
+
     .period {
         padding: 20px 0;
     }
 
-    .painters__container  {
+    .painters__container {
         padding: 20px 0;
     }
 
@@ -2995,5 +3094,96 @@ body.lock {
 
     .event__descr {
         margin-bottom: 17px;
+    }
+
+    /* projects */
+    .projects__title {
+        margin-bottom: 12px;
+    }
+
+    .projects__descr {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 50px;
+    }
+
+    .partners__wrapper {
+        padding: 0 47px;
+    }
+
+    .partners__title {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .partner__link {
+        height: 65px;
+    }
+
+    /* contacts */
+    .form {
+        border: none;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .form__address {
+        margin-bottom: 20px;
+    }
+
+    .form__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .form__address-title {
+        margin-bottom: 4px;
+    }
+
+    .connection__title {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .form__btn {
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 40px;
+    }
+
+    .form__input {
+        height: 40px;
+    }
+
+    .connection__socials-link {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .form__fields {
+        margin-bottom: 25px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer__container {
+        flex-direction: column-reverse;
+    }
+
+    .footer__social {
+        margin-bottom: 20px;
+    }
+
+    .footer__logo {
+        margin-right: 0;
+    }
+
+    .social__link-icon {
+        width: 50px;
+        height: 50px;
     }
 }

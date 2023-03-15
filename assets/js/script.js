@@ -136,29 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
-    // Scroll to block
-    document.querySelectorAll('a[href^="#"').forEach(link => {
-
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            let href = this.getAttribute('href').substring(1);
-
-            const scrollTarget = document.getElementById(href);
-
-            // const topOffset = document.querySelector('.scrollto').offsetHeight;
-            const topOffset = 170;
-            const elementPosition = scrollTarget.getBoundingClientRect().top;
-            const offsetPosition = elementPosition - topOffset;
-
-            window.scrollBy({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        });
-    });
-
     // events slider
     const eventsSlider = new Swiper('.events__slider', {
         slidesPerView: 3,
@@ -221,6 +198,12 @@ document.addEventListener("DOMContentLoaded", function () {
             768: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
+                spaceBetween: 34,
+                touchRatio: true,
+            },
+            1024: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
                 spaceBetween: 50,
                 touchRatio: false,
             },
@@ -234,29 +217,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // tooltips
-    let tooltips = document.querySelectorAll('.tooltip');
-
-    for (let i = 0; i < tooltips.length; i += 1) {
-        let tooltip = tooltips[i];
-
-        tooltip.addEventListener('click', function () {
-            if (tooltip.classList.contains('active')) {
-                tooltip.classList.remove('active');
-            } else {
-                for (let j = 0; j < tooltips.length; j += 1) {
-                    tooltips[j].classList.remove('active');
-                }
-                tooltip.classList.add('active');
-            }
-        });
-
-        window.addEventListener('click', function (e) {
-            const target = e.target;
-            if (!target.closest('.tooltip')) {
-                tooltip.classList.remove('active');
-            }
-        });
-    }
+    tippy('.tooltip', {
+        trigger: 'click',
+        duration: 200,
+    });
 
     // inputmask for tel
     let telSelector = document.querySelector("input[type='tel']");
@@ -326,5 +290,31 @@ document.addEventListener("DOMContentLoaded", function () {
         headerMenuButton.classList.toggle('active');
         headerMenu.classList.toggle('active');
         body.classList.toggle('lock');
+    });
+
+    // Scroll to block
+    document.querySelectorAll('a[href^="#"').forEach(link => {
+
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            let href = this.getAttribute('href').substring(1);
+
+            const scrollTarget = document.getElementById(href);
+
+            // const topOffset = document.querySelector('.scrollto').offsetHeight;
+            const topOffset = 170;
+            const elementPosition = scrollTarget.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - topOffset;
+
+            headerMenuButton.classList.remove('active');
+            headerMenu.classList.remove('active');
+            body.classList.remove('lock');
+
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
     });
 });
